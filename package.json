@@ -1,0 +1,14 @@
+{
+  "name": "victusclient-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VictusClient Discord relay — bridges the website chat and a Discord channel",
+  "type": "module",
+  "main": "relay.mjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node relay.mjs"
+  }
+}
