@@ -14,7 +14,7 @@ Discord channel  ──bot gateway──▶  relay  ──GET /api/messages─�
 ## Run locally
 
 ```bash
-npm start        # or: node relay.mjs
+npm start        # or: node main.js
 ```
 
 It listens on `http://127.0.0.1:8787` by default; the site polls it via
@@ -26,7 +26,7 @@ This folder is self-contained — push just this folder to any Node host:
 
 1. Copy `.env.example` to `.env` (or set the environment variables in your
    host's dashboard).
-2. Set the **start command** to `npm start` (or `node relay.mjs`).
+2. Set the **start command** to `npm start` (or `node main.js`).
 3. Node **22+** is required (a `Procfile` is included for hosts that use one).
 4. On most hosts, set `HOST=0.0.0.0` so the service is reachable, and add your
    website's origin to `ALLOWED_ORIGINS`.

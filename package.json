@@ -4,11 +4,11 @@
   "private": true,
   "description": "VictusClient Discord relay — bridges the website chat and a Discord channel",
   "type": "module",
-  "main": "relay.mjs",
+  "main": "main.js",
   "engines": {
     "node": ">=22"
   },
   "scripts": {
-    "start": "node relay.mjs"
+    "start": "node main.js"
   }
 }

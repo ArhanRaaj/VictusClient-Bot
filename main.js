@@ -27,6 +27,14 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+if (typeof WebSocket === 'undefined' || Number(process.versions.node.split('.')[0]) < 22) {
+  console.error(
+    `[fatal] Node ${process.versions.node} is too old. This bot needs Node 22+ (for the global WebSocket).\n` +
+      `On Pterodactyl/VictusCloud: change the server's Docker image to a Node 22+ image, e.g. ghcr.io/parkervcp/yolks:nodejs_22.`
+  );
+  process.exit(1);
+}
+
 const here = dirname(fileURLToPath(import.meta.url));
 const projectRoot = here;
 
